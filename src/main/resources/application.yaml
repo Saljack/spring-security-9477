@@ -1,0 +1,12 @@
+spring:
+    security:
+      oauth2:
+       client:
+         registration:
+            test:
+             client-id: client
+             client-secret: secret
+             authorization-grant-type: client_credentials
+         provider:
+           test:
+             token-uri: http://localhost:18081/auth/realms/test/protocol/openid-connect/token
